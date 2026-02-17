@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Hasan - Personal Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Muhammad Hasan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+      <!--Profile photo-->
+    <img src="profile.jpg" alt="Profile photo" 
+      style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;"
+      onerror="this.src='https://placehold.co/200x200?text=Photo'"/>
+
+        <!-- Intro text -->
+        <div class="col-md-8">
+          <h1>Hi, I'm Muhammad Hasan</h1>
+          <p class="lead">Computer Science Student at North Dakota State University</p>
+          <p>
+            Welcome to my personal website! I'm a CS student who loves movies, soccer, and bikes.
+            I'm currently learning web development and
+            building small projects to improve my skills.
+          </p>
+
+          <!-- Address -->
+          <address>
+            <strong>Location:</strong> 123 Campus Drive, Fargo, ND<br/>
+            <strong>Email:</strong> muhammad.hasan@ndsu.edu<br/>
+            <strong>Phone:</strong> (701) 000-0000
+          </address>
+
+          <a href="#contact" class="btn btn-primary mt-2">Contact Me</a>
+          <a href="#portfolio" class="btn btn-outline-secondary mt-2 ms-2">See My Work</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Background</h4>
+          <p>
+            I'm studying Computer Science. I enjoy building
+            things for the internet and learning new technologies. I'm also interested in
+            UI/UX design and making websites that are easy to use.
+          </p>
+          <p>
+            In my free time I like to read books, and work on small coding projects.
+            I also play guitar, though I'm still a beginner!
+          </p>
+
+          <!-- Favorite links -->
+          <h4 class="mt-4">Favorite Websites</h4>
+          <ul>
+            <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Favorite movies -->
+          <h4>Favorite Movies</h4>
+          <ul>
+            <li>Interstellar</li>
+            <li>The Matrix</li>
+            <li>Inception</li>
+            <li>Ex Machina</li>
+            <li>Blade Runner 2049</li>
+          </ul>
+
+          <!-- Ordered list of hobbies -->
+          <h4 class="mt-4">My Hobbies</h4>
+          <ol>
+            <li>Hiking on weekends</li>
+            <li>Coding side projects</li>
+            <li>Playing guitar</li>
+            <li>Reading books</li>
+            <li>Photography</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Image Carousel -->
+      <h4 class="mt-5">My Interests</h4>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photo1.jpg" class="d-block w-100" alt="Soccer"
+                 onerror="this.src='https://placehold.co/600x300?text=Soccer'"/>
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <p>Soccer</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo2.jpg" class="d-block w-100" alt="Biking"
+                 onerror="this.src='https://placehold.co/600x300?text=Biking'"/>
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <p>Biking</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="photo3.jpg" class="d-block w-100" alt="Coding"
+                 onerror="this.src='https://placehold.co/600x300?text=Coding'"/>
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <p>Coding</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Video embed -->
+      <h4 class="mt-5">A Video I Like</h4>
+      <iframe width="700" height="350" src="https://youtube/kZTZfQfnOTQ?si=WfQn0BKngM3e8nsy" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+
+      <!-- Weekly Schedule Table -->
+      <h4 class="mt-5">My Weekly Schedule</h4>
+      <div class="table-responsive" style="max-width: 700px;">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 AM</td>
+              <td class="table-primary">CS</td>
+              <td></td>
+              <td class="table-primary">CS</td>
+              <td></td>
+              <td class="table-primary">CS</td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td></td>
+              <td class="table-success">MATH</td>
+              <td></td>
+              <td class="table-success">MATH</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td class="table-warning">Lunch</td>
+              <td class="table-warning">Lunch</td>
+              <td class="table-warning">Lunch</td>
+              <td class="table-warning">Lunch</td>
+              <td class="table-warning">Lunch</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td class="table-info">STAT</td>
+              <td></td>
+              <td class="table-info">STAT</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4:00 PM</td>
+              <td></td>
+              <td class="table-danger">Work</td>
+              <td></td>
+              <td class="table-danger">Work</td>
+              <td class="table-danger">Work</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <hr/>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">My Projects</h2>
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Black Jack</h5>
+              <p class="card-text">A simple black jack game that uses command line interface.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/mo8047/BlackJack-Game" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">A calculator program that loops over the users numbers ensuring they don't lose the number and can continue to reuse it.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/mo8047/Calculator" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Highest Bidder Game</h5>
+              <p class="card-text">A simple intuitive program that takes the user input and bid price and displays the final max bid and the winner.</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/mo8047/highest_bidder" class="btn btn-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+
+          <!-- Contact Form -->
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required/>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="your@email.com" required/>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+              <div class="invalid-feedback">Please write a message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Muhammad Hasan</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- My JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

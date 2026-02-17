@@ -1,0 +1,51 @@
+/* My Personal Website Styles */
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Add some space below the navbar so content isn't hidden */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0d6efd;
+}
+
+/* Make the home section have a light background */
+#home {
+  background-color: #ffffff;
+}
+
+/* About section background */
+#about {
+  background-color: #f0f4ff;
+}
+
+/* Portfolio section background */
+#portfolio {
+  background-color: #ffffff;
+}
+
+/* Contact section background */
+#contact {
+  background-color: #f0f4ff;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
